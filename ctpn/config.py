@@ -51,13 +51,13 @@ class Config(object):
     # 是否使用侧边改善
     USE_SIDE_REFINE = True
     # 预训练模型
-    PRE_TRAINED_WEIGHT = '/opt/pretrained_model/resnet50_weights_tf_dim_ordering_tf_kernels_notop.h5'
+    PRE_TRAINED_WEIGHT = r'G:\Code\pr\keras-ctpn\model\resnet50_weights_tf_dim_ordering_tf_kernels_notop.h5'
 
-    WEIGHT_PATH = '/tmp/ctpn.h5'
+    WEIGHT_PATH = r'G:\Code\pr\keras-ctpn\model\ctpn_100.h5'
 
     # 数据集路径
-    IMAGE_DIR = '/opt/dataset/OCR/ICDAR_2015/train_images'
-    IMAGE_GT_DIR = '/opt/dataset/OCR/ICDAR_2015/train_gt'
+    IMAGE_DIR = r'G:\Code\pr\keras-ctpn\dataset\ch4_training_images'
+    IMAGE_GT_DIR = r'G:\Code\pr\keras-ctpn\dataset\ch4_training_localization_transcription_gt'
 
 
 cur_config = Config()

@@ -90,8 +90,8 @@ def main(args):
                     validation_steps=100 // config.IMAGES_PER_GPU,
                     verbose=True,
                     callbacks=get_call_back(),
-                    workers=2,
-                    use_multiprocessing=True)
+                    # workers=2,
+                    use_multiprocessing=False)
 
     # 保存模型
     m.save(config.WEIGHT_PATH)
